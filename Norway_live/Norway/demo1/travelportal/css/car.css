@@ -1,0 +1,55 @@
+.detail_car { border-radius:5px; border:1px solid #8cc1e7; float:left; width:246px; font-size:12px; color:#3c3c3c;margin-right: 12px; background-color:#fff;}
+.car-inside { padding: 00px 20px 5px 20px;float: left;width: 206px;}
+.car-inside1 { padding: 5px 20px 20px 20px;float: left;width: 206px;}
+.detail_car h5 {font-size: 13px;margin: 0px;color: #083d74;font-weight: normal;}
+.car-icon1{width: 100%;float: left;}
+.car-ico-01{float: left;width: 30px;text-align: center;font-weight: bold;}
+.car-icon2{width: 98%;float: left;height: 1px;box-shadow: 2px 2px 2px 2px #f6f6f6;}
+.car-inside h5{margin: 0px;font-family: myriad pro;}
+.price-car{float: left; width: 73%; background-color: #f47706;
+background-image: -moz-linear-gradient(top, #f47706, #d66c0c);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f47706), to(#d66c0c));
+background-image: -webkit-linear-gradient(top, #f47706, #d66c0c);
+background-image: -o-linear-gradient(top, #f47706, #d66c0c);
+background-image: linear-gradient(to bottom, #f47706, #d66c0c);
+background-repeat: repeat-x;
+/*border-color: #252525;*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47706', endColorstr='#d66c0c', GradientType=0); border-radius:5px; border:1px solid #f47706;}
+.price-car strong{font-size: 17px;}
+.rate-detail{width: 100%; float: left;}
+.rate-01{width: 112px; float: left;margin-top: 10px;}
+.rate-02{width: 94px; float: left;margin-top: 10px;}
+.prc{float: left;font-size: 11px;}
+.prc1{float: left; margin: 0px 5px 10px 0px;}
+.dtl-rate{width: 100%;float: left;line-height: 10px;}
+.top20{margin-top: 20px;}
+.top5{margin-top: 5px;}
+.icon-key{margin-left: 10px;}
+
+/*left part*/
+.blue_bg-1 {
+    
+   
+background-color: #2478b1;
+background-image: -moz-linear-gradient(top, #2478b1, #176091);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2478b1), to(#176091));
+background-image: -webkit-linear-gradient(top, #2478b1, #176091);
+background-image: -o-linear-gradient(top, #2478b1, #176091);
+background-image: linear-gradient(to bottom, #2478b1, #176091);
+background-repeat: repeat-x;
+/*border-color: #252525;*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2478b1', endColorstr='#176091', GradientType=0);
+
+    
+/*background-color: #063879;*/
+border-radius: 5px;
+padding: 20px 10px;
+-webkit-box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.75);
+-moz-box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.75);
+box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.75);
+}
+.blue_bg-1 h4{font-size: 16px; color: #fff; margin: 5px 0px 10px 0px;font-family: myriad pro;font-weight: normal;}
+.rental-inner{background-color: #fff; padding: 20px 20px 5px 20px; width: 81%; border-radius: 5px 5px 0px 0px;}
+.rental-inner1{background-color: #fff; padding: 5px 20px 20px 20px; width: 81%; border-radius: 0px 0px 5px 5px;}
+.rental-inner h4, p{color: #333; margin: 5px 0px;font-family: myriad pro;}
+.rental-inner1 h4, p{color: #333; margin: 5px 0px;font-family: myriad pro;}

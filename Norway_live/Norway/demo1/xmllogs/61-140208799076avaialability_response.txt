@@ -1,0 +1,8 @@
+Availability XML Response <?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header xmlns="http://webservices.amadeus.com/definitions"><SessionId>05GP8SMKD2|2</SessionId></soap:Header><soap:Body><soap:Fault xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>soap:Client</faultcode><faultstring>18|Presentation|Fusion DSC found an exception !
+	The data does not match the maximum length: 
+	For data element: locationId
+	Data length should be at least 3 and at most 5
+	Current position in buffer: Singapo /locationId 
+         
+	Last 15 characters before error:     locationId 
+	Current path in the grammar : /itinerary#1/departureLocalization#1/departurePoint#1/locationId#1</faultstring><faultactor>SI:APA</faultactor></soap:Fault></soap:Body></soap:Envelope>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Markup_Commission>
+	<Transaction>
+		<Charge Cal="%">0</Charge>
+		<PaymentGateway Cal="%">0</PaymentGateway>
+	</Transaction>
+
+    <ReferelManagement>
+		<ChargeFlight Cal="%">0</ChargeFlight>
+        <ChargeBus Cal="%">0</ChargeBus>
+	</ReferelManagement>
+
+	<Hotel>
+		<Markup Cal="%">2.0</Markup>
+	</Hotel>
+	<Bus>
+		<Markup Cal=""></Markup>
+	</Bus>
+	<Car>
+		<Markup Cal=""></Markup>
+	</Car>
+	<AirIndia>
+		<Markup Cal="">0+++0+++0</Markup>
+	</AirIndia>
+	<Indian>
+		<Markup Cal="">++++++</Markup>
+	</Indian>
+	<JetAirways>
+		<Markup Cal="">0+++0+++0</Markup>
+	</JetAirways>
+	<JetLite>
+		<Markup Cal="">0+++0+++0</Markup>
+	</JetLite>
+	<Kingfisher>
+		<Markup Cal="">0+++0+++0</Markup>
+	</Kingfisher>
+	<AirIndiaExpress>
+		<Markup Cal="">0+++0+++0</Markup>
+	</AirIndiaExpress>
+	<GoAir>
+		<Markup Cal="">0+++0+++0</Markup>
+	</GoAir>
+	<Indigo>
+		<Markup Cal="">0+++0+++0</Markup>
+	</Indigo>
+	<MDLR>
+		<Markup Cal="">0+++0+++0</Markup>
+	</MDLR>
+	<Paramount>
+		<Markup Cal="">0+++0+++0</Markup>
+	</Paramount>
+	<SpiceJet>
+		<Markup Cal="">0+++0+++0</Markup>
+	</SpiceJet>
+	<IAirIndia>
+		<Markup Cal="">0+++0+++0</Markup>
+	</IAirIndia>
+	<IIndian>
+		<Markup Cal="">++++++</Markup>
+	</IIndian>
+	<IJetAirways>
+		<Markup Cal="">0+++0+++0</Markup>
+	</IJetAirways>
+	<IJetLite>
+		<Markup Cal="">0+++0+++0</Markup>
+	</IJetLite>
+	<IKingfisher>
+		<Markup Cal="">0+++0+++0</Markup>
+	</IKingfisher>
+	<IAirIndiaExpress>
+		<Markup Cal="">0+++0+++0</Markup>
+	</IAirIndiaExpress>
+	<IGoAir>
+		<Markup Cal="">0+++0+++0</Markup>
+	</IGoAir>
+	<IIndigo>
+		<Markup Cal="">0+++0+++0</Markup>
+	</IIndigo>
+	<IMDLR>
+		<Markup Cal="">0+++0+++0</Markup>
+	</IMDLR>
+	<IParamount>
+		<Markup Cal="">0+++0+++0</Markup>
+	</IParamount>
+	<ISpiceJet>
+		<Markup Cal="">0+++0+++0</Markup>
+	</ISpiceJet>
+	 <InternationalFlight>
+                <Markup Cal="">0+++0+++0</Markup>
+        </InternationalFlight>
+</Markup_Commission>

@@ -1,0 +1,251 @@
+/* 
+================================================
+autosuggest, inquisitor style
+================================================
+*/
+
+body
+{
+	position: relative;
+}
+
+
+div.autosuggest
+{
+	position: absolute;
+	/*background-image: url(img_inquisitor/as_pointer.gif);*/
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding: 5px 0px 0px 0px;
+	height:auto;
+	max-height:314px;
+	z-index: 100000px;
+	overflow:visible;
+	width:400px;
+	
+	
+
+}
+
+div.autosuggest div.as_header,
+div.autosuggest div.as_footer
+{
+	position: relative;
+	height: auto;
+	padding: 0 6px; 
+	overflow: hidden;
+	width:800px;
+}
+div.autosuggest div.as_footer
+{
+ 
+	
+}
+
+div.autosuggest div.as_header div.as_corner,
+div.autosuggest div.as_footer div.as_corner
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0px;
+	width: 0px;
+	width:800px;
+	 border-radius:7px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	
+}
+div.autosuggest div.as_footer div.as_corner
+{
+	 
+}
+div.autosuggest div.as_header div.as_bar,
+div.autosuggest div.as_footer div.as_bar
+{
+	height: 0px;
+	overflow: hidden;
+	background-color: #3b509d;
+	border-radius:7px;
+	width:800px;
+}
+
+
+div.autosuggest ul
+{
+	list-style: none;
+	margin: 0 0 -4px 0;
+	padding: 0; 
+	background-color: #fff;
+	/*border-radius:5px;*/
+	border:1px #CCC solid;
+	z-index:100;
+	 border-radius:7px;
+	position:relative;
+	margin-top:4px;
+	margin-left:4px;
+	width:460px;
+	overflow-y:scroll;
+	height:250px;
+	overflow-x:hidden;
+}
+
+div.autosuggest ul li
+{
+	color: #ccc;
+	padding: 0;
+	margin: 0 4px 4px;
+	text-align: left;
+	width:268px;
+
+}
+
+div.autosuggest ul li a
+{
+	color: #2b2b2b;
+	font-size:13px;
+	display: block;
+	text-decoration: none;
+	 
+	/*text-shadow: #000 0px 0px 5px;*/
+	position: relative;
+	padding: 0;
+	width:400px;
+	
+}
+div.autosuggest ul li a:hover
+{
+	background-color: #444;
+	width:400px;
+}
+div.autosuggest ul li.as_highlight a:hover
+{
+	background-color: #fff;  
+}
+
+div.autosuggest ul li a span
+{
+	display: block;
+	padding: 3px 6px;
+	font-weight: normal;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #505050 ;
+	width:400px;
+	
+}
+
+div.autosuggest ul li a span small
+{
+	font-weight: normal;
+	color: #999;
+	font-size:12px; 
+	
+}
+
+div.autosuggest ul li.as_highlight a span small
+{
+	color: #ccc;
+	font-size:12px;
+	 
+}
+
+div.autosuggest ul li.as_highlight a
+{
+	color: #fff;
+	background-color: #ccc;
+	font-size:12px; 
+	
+}
+ 
+
+
+div.autosuggest ul li.as_highlight a span
+{
+	background-color: #0a4782;
+	color:#FFF;border-radius:5px;
+	width:400px;
+	
+	
+}
+div.autosuggest ul li.as_highlight a span:hover
+{
+	background-color: #0a4782;
+	color:#FFF;border-radius:5px;
+	width:400px;
+	
+	
+}
+
+div.autosuggest ul li a .tl,
+div.autosuggest ul li a .tr
+{
+	background-image: transparent;
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	top: 0;
+	padding: 0;
+	margin: 0; 
+}
+div.autosuggest ul li a .tr
+{
+	right: 0; 
+	width:300px;
+}
+
+div.autosuggest ul li.as_highlight a .tl
+{
+	left: 0;
+	
+	 
+}
+
+div.autosuggest ul li.as_highlight a .tr
+{
+	right: 0;
+	 
+	color:#999;
+}
+
+
+
+div.autosuggest ul li.as_warning
+{
+	font-weight: bold;
+	text-align: center;
+	font-size:12px;
+	
+}
+
+div.autosuggest ul em
+{
+	font-style: normal;
+	font-size:12px;
+	color: #ff2121 ;
+	list-style-type:
+	text-transform:none;
+	
+}
+div.autosuggest ul a:hover
+{
+	font-style: normal;
+	font-size:12px;
+	color:#fff;
+	text-transform:none;
+}
+div.autosuggest ul em:hover
+{
+	font-style: normal;
+	font-size:12px;
+	color:#fff;
+	text-transform:none;
+}
+div.autosuggest ul em a:hover
+{
+	font-style: normal;
+	font-size:12px;
+	color:#fff;
+	text-transform:none;
+}

@@ -1,0 +1,56 @@
+
+@media screen and (max-width: 1000px){
+
+
+
+
+.flight-calander{background-color: #cecece; padding: 10px; border-radius: 4px; overflow-x: auto; width:74% !important; float:left; font-size:12px;}
+
+.table th, .table td {padding: 3px;
+line-height: 16px;}
+
+.home_page_add_part {
+	width:23% !important;
+	float:right;
+	}
+}
+
+
+@media screen and (max-width: 650px){
+	
+.flight-calander{background-color: #cecece; padding: 10px; border-radius: 4px; overflow-x: auto; width:98% !important; margin:auto; font-size:12px;}
+
+
+
+.home_page_add_part {
+	width:98% !important;
+	float:none;
+	margin:auto;
+	display:none;
+	}
+
+	
+}
+
+
+
+
+
+
+@media screen and (max-width: 550px){
+
+
+
+
+.flight-calander{background-color: #cecece; padding: 10px; border-radius: 4px; overflow-x: auto; width:98% !important; margin:auto; font-size:12px;}
+
+.cal-table th {
+	font-size:10px !important;
+	}
+
+.cal-table td {
+font-size:10px !important;
+}
+
+}
+

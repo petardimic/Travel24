@@ -1,0 +1,106 @@
+<soapenv:envelope xmlns:sat="http://xml.amadeus.com/FMPTBQ_14_1_1A" xmlns:ses="http://xml.amadeus.com/2010/06/Session_v3" xmlns:link="http://wsdl.amadeus.com/2010/06/ws/Link_v1" xmlns:app="http://xml.amadeus.com/2010/06/AppMdw_CommonTypes_v3" xmlns:iat="http://www.iata.org/IATA/2007/00/IATA2010.1" xmlns:typ="http://xml.amadeus.com/2010/06/Types_v1" xmlns:sec="http://xml.amadeus.com/2010/06/Security_v1" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+			  <soapenv:header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+		<sec:ama_securityhosteduser>
+			<sec:userid agentdutycode="SU" pseudocitycode="LUXXW38MT" requestortype="U" pos_type="1"></sec:userid>
+		</sec:ama_securityhosteduser>
+		<wsse:security xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:usernametoken>
+				<wsse:username>WSTTZTRV</wsse:username>
+				<wsse:password type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">rCCKGbcI56rtTP+NaihK2flkvf8=</wsse:password>
+	<wsse:nonce encodingtype="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">OTc3OTQ3OTQy</wsse:nonce>
+				<wsu:created>2015-03-10T09:54:59Z</wsu:created>
+			</wsse:usernametoken>			
+		</wsse:security>		
+		<wsa:messageid soapenv:mustunderstand="1">54febf735864b</wsa:messageid>
+		<wsa:to soapenv:mustunderstand="1">https://nodeD1.test.webservices.amadeus.com/1ASIWTRVTTZ</wsa:to>
+		<wsa:action soapenv:mustunderstand="1">http://webservices.amadeus.com/FMPCAQ_08_2_1A</wsa:action>
+		<wsa:replyto soapenv:mustunderstand="1">
+			<wsa:address>http://www.w3.org/2005/08/addressing/anonymous</wsa:address>
+		</wsa:replyto>		
+	</soapenv:header>		
+			<soapenv:body>			
+			<fare_masterpricercalendar xmlns="http://xml.amadeus.com/FMPCAQ_08_2_1A">
+					<numberofunit>
+					<unitnumberdetail>
+					<numberofunits>1</numberofunits>
+					<typeofunit>PX</typeofunit>																	</unitnumberdetail>
+																</numberofunit>
+																<paxreference>
+								<ptc>ADT</ptc><traveller>
+										<ref>1</ref>
+									</traveller>
+								</paxreference>
+																<fareoptions>
+															<pricingtickinfo>
+																<pricingticketing>
+																	<pricetype>RU</pricetype>
+																	<pricetype>RP</pricetype>
+																	<pricetype>ET</pricetype>
+																	<pricetype>TAC</pricetype>
+																	<pricetype>CUC</pricetype>
+																</pricingticketing>
+																 <sellingpoint> 
+																	<locationid>ODE</locationid> 
+																</sellingpoint> 
+																<ticketingpoint> 
+																	<locationid>ODE</locationid> 
+																</ticketingpoint> 
+															</pricingtickinfo>
+															 <conversionrate> 
+																<conversionratedetail> 
+																	<currency>EUR</currency> 
+																</conversionratedetail> 
+															</conversionrate> 
+														</fareoptions>
+														
+																<itinerary>
+																	<requestedsegmentref>
+																		<segref>1</segref>
+																	</requestedsegmentref>
+																	<departurelocalization>
+																		<departurepoint>
+																			<locationid>DEL</locationid>
+																		</departurepoint>
+																	</departurelocalization>
+																	<arrivallocalization>
+																		<arrivalpointdetails>
+																			<locationid>BKK</locationid>
+																		</arrivalpointdetails>
+																	</arrivallocalization>
+																	<timedetails>
+																		<firstdatetimedetail>
+																			<date>120315</date>
+																		</firstdatetimedetail>
+																		<rangeofdate>
+																			<rangequalifier>C</rangequalifier>
+																			<dayinterval>3</dayinterval>
+																		</rangeofdate>
+																	</timedetails>
+																</itinerary>
+																<itinerary>
+																	<requestedsegmentref>
+																		<segref>2</segref>
+																	</requestedsegmentref>
+																	<departurelocalization>
+																		<departurepoint>
+																			<locationid>BKK</locationid>
+																		</departurepoint>
+																	</departurelocalization>
+																	<arrivallocalization>
+																		<arrivalpointdetails>
+																			<locationid>DEL</locationid>
+																		</arrivalpointdetails>
+																	</arrivallocalization>
+																	<timedetails>
+																		<firstdatetimedetail>
+																			<date>180315</date>
+																		</firstdatetimedetail>
+																		<rangeofdate>
+																			<rangequalifier>C</rangequalifier>
+																			<dayinterval>3</dayinterval>
+																		</rangeofdate>
+																	</timedetails>
+																</itinerary>
+															</fare_masterpricercalendar>
+	</soapenv:body>
+</soapenv:envelope>

@@ -1,0 +1,145 @@
+/*
+ * SmartTab plugin v2.0
+ * jQuery Tab Control Plugin
+ * 
+ * by Dipu Raj
+ * http://techlaboratory.net/smarttab
+ * 
+ * License 
+ * http://creativecommons.org/licenses/by-sa/3.0/  
+ */
+.stMain {
+  display:block;
+  padding:0;
+  color: #000;
+  border: 0px solid #CCC;
+  font-family: "Segoe UI",Tahoma,arial,sans-serif;
+  font-size: 100%;
+  width:770px;
+  z-index:9;
+  position:relative;
+  margin:20px 0 10px 0;
+  float:left;
+}
+
+.stContainer {
+  display:block;
+  margin:0;
+  padding:0;
+  border: 1px solid #91c4e8; 
+  height:300px;
+  overflow:hidden;  
+  position: relative;
+  min-height: 300px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color:#e7f5fd;
+  opacity:0.9;
+  
+}
+
+.stMain div.tabContent { 
+  display:block;
+  position: absolute;
+  margin:0;  
+  border: 0px solid #D4D4D4;    
+  background-color: #e7f5fd;
+  text-align:left;
+  padding:15px 15px 15px 0;
+}
+.stMain ul.tabAnchor {
+  display: inline-block;
+  list-style-type: none;
+  position:relative;
+  padding:0;
+  margin:0;    
+margin-left:20px;
+  clear: both;
+  margin-bottom: -1px;
+  z-index: 100;
+}
+.stMain ul.tabAnchor li{ 
+  position: relative; 
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.stMain ul.tabAnchor li a { 
+  display:block;
+  margin:0;
+  margin-right: 3px;
+  padding:5px;  
+  font-size: 12px;
+  color:#666;
+  text-decoration: none;
+  outline-style:none;
+ 
+ list-style:none; float:left;  background-color:#900; height:20px; line-height:20px; width:70px;  text-align:center;  border-radius:5px 5px 0 0; background: rgb(187, 16, 16);
+background: rgb(27, 87, 150);
+background: -moz-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: -webkit-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: -o-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: -ms-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: linear-gradient(180deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);  text-decoration:none; color:#FFF;IE6-9 */                                          
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;  border:1px solid #91c4e8; 
+}
+.stMain ul.tabAnchor li a small {
+  font-size:15px;
+}
+.stMain ul.tabAnchor li a:hover {
+  color:#000;
+ background: rgb(231, 245, 253);
+background: -moz-linear-gradient(93deg, rgb(231, 245, 253) 30%, rgb(231, 245, 253) 70%);
+background: -webkit-linear-gradient(93deg, rgb(231, 245, 253) 30%, rgb(231, 245, 253) 70%);
+background: -o-linear-gradient(93deg, rgb(231, 245, 253) 30%, rgb(231, 245, 253) 70%);
+background: -ms-linear-gradient(93deg, rgb(231, 245, 253) 30%, rgb(231, 245, 253) 70%);
+background: linear-gradient(183deg, rgb(231, 245, 253) 30%, rgb(231, 245, 253) 70%);
+ list-style:none; float:left;  width:70px;  text-align:center;  border-radius:5px 5px 0 0; text-decoration:none; color:#FFF; height:20px; line-height:20px; border:1px solid #91c4e8;
+}
+.stMain ul.tabAnchor li a.sel {
+  color:#000;
+
+  cursor:text;
+ background: rgb(231, 245, 253);
+background: -moz-linear-gradient(93deg, rgb(231, 245, 253) 30%, rgb(231, 245, 253) 70%);
+background: -webkit-linear-gradient(93deg, rgb(231, 245, 253) 30%, rgb(231, 245, 253) 70%);
+background: -o-linear-gradient(93deg, rgb(231, 245, 253) 30%, rgb(231, 245, 253) 70%);
+background: -ms-linear-gradient(93deg, rgb(231, 245, 253) 30%, rgb(231, 245, 253) 70%);
+background: linear-gradient(183deg, rgb(231, 245, 253) 30%, rgb(231, 245, 253) 70%);border:1px solid #91c4e8;
+
+  list-style:none; float:left;  height:20px; line-height:20px; width:70px; text-align:center;  border-radius:5px 5px 0 0; text-decoration:none; color:#000;IE6-9 */
+}
+.loader{
+  position: absolute;
+  left:48%;
+  top:40%;
+  display:block;
+  margin:0;
+  padding:5px; 
+  padding-top: 35px;
+  font-size: 10px;
+  color:#666;
+  text-decoration: none;
+  outline-style:none;
+
+  background: #f6f6f6 url(../images/loader.gif) no-repeat 10px 10px ;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;   
+}
+a.stLinks { 
+  margin:0;
+  padding:5px;
+  color:#666;
+  text-decoration: none;
+  outline-style:none;
+  border: 1px solid #D4D4D4;
+  background-color: #f6f6f6;
+ }
+a.stLinks:hover {
+  color:#FFF;
+  background-color: #00A7DB;
+}

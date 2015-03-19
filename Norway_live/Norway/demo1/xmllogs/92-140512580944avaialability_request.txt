@@ -1,0 +1,97 @@
+Availability XML Request<?xml version="1.0" encoding="utf-8"?>
+                                            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+                                             <soapenv:Header>
+                                                              <SessionId>0AAQQ723T6</SessionId>
+                                                              <SequenceNumber>1</SequenceNumber>
+                                               </soapenv:Header>
+                                              <soapenv:Body>
+                                                        <Fare_MasterPricerTravelBoardSearch xmlns="http://xml.amadeus.com/FMPTBQ_10_3_1A">
+                                                                        <numberOfUnit>
+                                                                                <unitNumberDetail>
+                                                                                        <numberOfUnits>1</numberOfUnits>
+                                                                                        <typeOfUnit>PX</typeOfUnit>
+                                                                                </unitNumberDetail>
+                                                                                <unitNumberDetail>
+                                                                                        <numberOfUnits>200</numberOfUnits>
+                                                                                        <typeOfUnit>RC</typeOfUnit>
+                                                                                </unitNumberDetail>
+                                                                        </numberOfUnit>
+                                                                        <paxReference>
+                       <ptc>ADT</ptc><traveller>
+                                    <ref>1</ref>
+                            </traveller>
+                      </paxReference>
+                                                                        <fareOptions>
+                                                                                <pricingTickInfo>
+                                                                                        <pricingTicketing>
+                                                                                                <priceType>RU</priceType>
+                                                                                                <priceType>RP</priceType>
+                                                                                                <priceType>ET</priceType>
+                                                                                                <priceType>TAC</priceType>
+                                                                                                <priceType>CUC</priceType>
+                                                                                        </pricingTicketing>
+                                                                                         <sellingPoint> 
+                                                                                                <locationId>ODE</locationId> 
+                                                                                        </sellingPoint> 
+                                                                                        <ticketingPoint> 
+                                                                                                <locationId>ODE</locationId> 
+                                                                                        </ticketingPoint> 
+                                                                                </pricingTickInfo>
+                                                                                 <conversionRate> 
+                                                                                        <conversionRateDetail> 
+                                                                                                <currency>USD</currency> 
+                                                                                        </conversionRateDetail> 
+                                                                                </conversionRate> 
+                                                                        </fareOptions>
+                                                                        
+                                                                        <itinerary>
+                                                                                <requestedSegmentRef>
+                                                                                        <segRef>1</segRef>
+                                                                                </requestedSegmentRef>
+                                                                                <departureLocalization>
+                                    <departurePoint>
+                                            <locationId>IAD</locationId>
+                                    </departurePoint>
+                            </departureLocalization>
+                                                                                <arrivalLocalization>
+                                    <arrivalMultiCity>
+                                            <locationId>ADD</locationId>
+                                    </arrivalMultiCity>
+                            </arrivalLocalization>
+                                                                                <timeDetails>
+                                    <firstDateTimeDetail>
+                                            <date>270714</date>
+                                      </firstDateTimeDetail>	
+                             </timeDetails>
+                                                                                 <flightInfo>
+                                                                                        
+                                                                                        
+                                                                                 </flightInfo>
+                                                                        </itinerary>
+                                                                        <itinerary>
+                                                                                <requestedSegmentRef>
+                                                                                        <segRef>2</segRef>
+                                                                                </requestedSegmentRef>
+                                                                                <departureLocalization>
+                                        <departurePoint>
+                                                <locationId>ADD</locationId>
+                                        </departurePoint>
+                                </departureLocalization>
+                                                                                <arrivalLocalization>
+                                        <arrivalMultiCity>
+                                                <locationId>IAD</locationId>
+                                        </arrivalMultiCity>
+                                </arrivalLocalization>
+                                                                                <timeDetails>
+                                    <firstDateTimeDetail>
+                                            <date>280814</date>
+                                      </firstDateTimeDetail>	
+                             </timeDetails>
+                                                                                 <flightInfo>
+                                                                                        
+                                                                                        
+                                                                                 </flightInfo>
+                                                                        </itinerary>
+                                                                </Fare_MasterPricerTravelBoardSearch>
+                                                </soapenv:Body>
+                                        </soapenv:Envelope>

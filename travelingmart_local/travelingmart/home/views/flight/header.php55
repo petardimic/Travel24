@@ -1,0 +1,419 @@
+
+<link href="<?Php echo WEB_DIR?>images/fav.png" rel='shortcut icon' type='image/x-icon'/>
+<link href="<?php print WEB_DIR ?>css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<?php print WEB_DIR ?>js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="<?php print WEB_DIR ?>css/popbox_new.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="<?php print WEB_DIR ?>css/car_css.css" type="text/css" media="screen" charset="utf-8">
+
+  <script type="text/javascript" charset="utf-8"  src="<?php print WEB_DIR ?>js/popbox_new.js"></script>
+  
+  <link rel="stylesheet" href="<?php echo WEB_DIR?>datepicker/jquery.ui.theme.css" type="text/css" />
+ <script type="text/javascript" src="<?php echo WEB_DIR?>datepicker/jquery.ui.datepicker.js"></script>
+  
+<link type="text/css" href="<?php echo WEB_DIR?>calender/css/overcast/jquery-ui-1.8.6.custom.css" rel="stylesheet" />
+
+  <script type="text/javascript" src="<?php print WEB_DIR; ?>autofill/js/bsn.AutoSuggest_c_2.0.js"></script>
+<link rel="stylesheet" href="<?php print WEB_DIR; ?>autofill/css/autosuggest_inquisitor.css" type="text/css" media="screen" charset="utf-8" />
+<!--Start of Zopim Live Chat Script-->
+<!--<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){
+z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?1eQnbmAAD1iY3Tie9aFLGvD90x8Fn1pC';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>-->
+<!--End of Zopim Live Chat Script-->
+
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $('.popbox,.popbox1').popbox();
+	  
+	
+    });
+  </script>
+  
+   <script type="text/javascript" src="<?php print WEB_DIR ?>js/jquery.easing.js"></script>
+        <script type="text/javascript" src="<?php print WEB_DIR ?>js/jquery.sweet-menu-1.0.js"></script>
+
+		<script type="text/javascript"> 
+		function dateADD_new(currentDate,duration_date)
+		{
+		 var valueofcurrentDate=currentDate.valueOf()+(24*60*60*1000*Number(duration_date));
+		 var newDate =new Date(valueofcurrentDate);
+		 return newDate;
+		} 
+		$(document).ready(function() {
+	$("#nights").change(function(){
+				var selectedDate1= $("#sd_hotel").datepicker('getDate');
+				var duration_date= $("#nights").val();
+				//alert(duration_date);return false;
+			  	var nextdayDate  = dateADD_new(selectedDate1,duration_date);
+				//alert(nextdayDate);
+				var nextDateStr = zeroPad(nextdayDate.getDate(),2)+"/"+zeroPad((nextdayDate.getMonth()+1),2)+"/"+(nextdayDate.getFullYear());
+				$t = nextDateStr;
+				//alert($t);
+				//$('#out2').html('<input name="ed_hotel" type="text" class="datefield"  value="'+$t+'" id="ed_hotel"/>');+
+				$("#ed_hotel").val($t);+
+				$(function() {
+							$( "#ed_hotel").datepicker({
+								numberOfMonths: 1,
+								minDate: 0
+							});
+
+						});
+						
+			});
+	 $(function(){
+					$( "#sd_hotel" ).datepicker({
+						numberOfMonths: 1,
+						minDate: 0
+					});
+					$( "#ed_hotel" ).datepicker({
+						numberOfMonths: 1,
+						minDate: 0
+					});
+					$( "#pic_date" ).datepicker({
+						numberOfMonths: 1,
+						minDate: 0
+					});
+					
+					$( "#drop_date" ).datepicker({
+						numberOfMonths: 1,
+						minDate: 2
+					});
+					
+				});
+	 		$('#sd_hotel').change(function(){
+				
+		   var selectedDate = $(this).datepicker('getDate');
+		    var str1 = $( "#ed_hotel" ).val();
+			
+			var predayDate = dateADD(selectedDate);
+			var str2 = zeroPad(predayDate.getDate(),2)+"/"+zeroPad((predayDate.getMonth()+1),2)+"/"+(predayDate.getFullYear());
+			var dt1 = parseInt(str1.substring(0,2),10);
+			var mon1 = parseInt(str1.substring(3,5),10);
+			var yr1 = parseInt(str1.substring(6,10),10);
+			var dt2 = parseInt(str2.substring(0,2),10);
+			var mon2 = parseInt(str2.substring(3,5),10);
+			var yr2 = parseInt(str2.substring(6,10),10);
+			var date1 = new Date(yr1, mon1, dt1);
+			var date2 = new Date(yr2, mon2, dt2);
+			if(date2 < date1)
+			{
+			}
+			else
+			{
+			   var nextdayDate  = dateADD(selectedDate);
+			   var nextDateStr = zeroPad(nextdayDate.getDate(),2)+"/"+zeroPad((nextdayDate.getMonth()+1),2)+"/"+(nextdayDate.getFullYear());
+			   $t = nextDateStr;
+			   $( "#ed_hotel" ).datepicker({
+							numberOfMonths: 1,
+							minDate: $t
+						});
+			   $( "#ed_hotel" ).val($t);
+			}
+		 });	
+		 $('#ed_hotel').change(function(){
+		   var selectedDate = $(this).datepicker('getDate');
+		    var str1 = $( "#sd_hotel" ).val();
+			var predayDate = dateSUB(selectedDate);
+			var str2 = zeroPad(predayDate.getDate(),2)+"/"+zeroPad((predayDate.getMonth()+1),2)+"/"+(predayDate.getFullYear());
+			var dt1 = parseInt(str1.substring(0,2),10);
+			var mon1 = parseInt(str1.substring(3,5),10);
+			var yr1 = parseInt(str1.substring(6,10),10);
+			var dt2 = parseInt(str2.substring(0,2),10);
+			var mon2 = parseInt(str2.substring(3,5),10);
+			var yr2 = parseInt(str2.substring(6,10),10);
+			var date1 = new Date(yr1, mon1, dt1);
+			var date2 = new Date(yr2, mon2, dt2);
+			if(date2 > date1)
+			{
+			}
+			else
+			{
+			   var nextdayDate  = dateSUB(selectedDate);
+			   var nextDateStr = zeroPad(nextdayDate.getDate(),2)+"/"+zeroPad((nextdayDate.getMonth()+1),2)+"/"+(nextdayDate.getFullYear());
+			   $t = nextDateStr;
+			   $( "#sd_hotel" ).datepicker({
+							numberOfMonths: 1,
+							minDate: $t
+						});
+			   $( "#sd_hotel" ).val($t);
+			}
+		 });	
+		$('#pic_date').change(function(){
+				
+		   var selectedDate = $(this).datepicker('getDate');
+		    var str1 = $( "#drop_date" ).val();
+			
+			var predayDate = dateADD(selectedDate);
+			var str2 = zeroPad(predayDate.getDate(),2)+"/"+zeroPad((predayDate.getMonth()+1),2)+"/"+(predayDate.getFullYear());
+			var dt1 = parseInt(str1.substring(0,2),10);
+			var mon1 = parseInt(str1.substring(3,5),10);
+			var yr1 = parseInt(str1.substring(6,10),10);
+			var dt2 = parseInt(str2.substring(0,2),10);
+			var mon2 = parseInt(str2.substring(3,5),10);
+			var yr2 = parseInt(str2.substring(6,10),10);
+			var date1 = new Date(yr1, mon1, dt1);
+			var date2 = new Date(yr2, mon2, dt2);
+			if(date2 < date1)
+			{
+			}
+			else
+			{
+			   var nextdayDate  = dateADD(selectedDate);
+			   var nextDateStr = zeroPad(nextdayDate.getDate(),2)+"/"+zeroPad((nextdayDate.getMonth()+1),2)+"/"+(nextdayDate.getFullYear());
+			   $t = nextDateStr;
+			   $( "#drop_date" ).datepicker({
+							numberOfMonths: 1,
+							minDate: $t
+						});
+			   $( "#drop_date" ).val($t);
+			}
+		 });	
+		 $('#drop_date').change(function(){
+		   var selectedDate = $(this).datepicker('getDate');
+		    var str1 = $( "#pic_date" ).val();
+			var predayDate = dateSUB(selectedDate);
+			var str2 = zeroPad(predayDate.getDate(),2)+"/"+zeroPad((predayDate.getMonth()+1),2)+"/"+(predayDate.getFullYear());
+			var dt1 = parseInt(str1.substring(0,2),10);
+			var mon1 = parseInt(str1.substring(3,5),10);
+			var yr1 = parseInt(str1.substring(6,10),10);
+			var dt2 = parseInt(str2.substring(0,2),10);
+			var mon2 = parseInt(str2.substring(3,5),10);
+			var yr2 = parseInt(str2.substring(6,10),10);
+			var date1 = new Date(yr1, mon1, dt1);
+			var date2 = new Date(yr2, mon2, dt2);
+			if(date2 > date1)
+			{
+			}
+			else
+			{
+			   var nextdayDate  = dateSUB(selectedDate);
+			   var nextDateStr = zeroPad(nextdayDate.getDate(),2)+"/"+zeroPad((nextdayDate.getMonth()+1),2)+"/"+(nextdayDate.getFullYear());
+			   $t = nextDateStr;
+			   $( "#pic_date" ).datepicker({
+							numberOfMonths: 1,
+							minDate: $t
+						});
+			   $( "#pic_date" ).val($t);
+			}
+		 });
+});
+	function dateADD(currentDate)
+	{
+	 var valueofcurrentDate=currentDate.valueOf()+(24*60*60*1000);
+	 var newDate =new Date(valueofcurrentDate);
+	 var oneDay = 24*60*60*1000;
+ 	 var diffDays = Math.round(Math.abs((newDate.getTime() - currentDate.getTime())/(oneDay)));
+ 
+	// $("#duration_new").html('<select name="nights" id="nights" class="field"  style="width:50px"><option value="1">'+diffDays+'</option><?php for($i = 1; $i<=30; $i++){?><option value="<?php echo $i; ?>"><?php echo $i; ?></option><?php	}?></select>');
+ 
+	 return newDate;
+	} 
+	function dateSUB(currentDate)
+	{
+	 var valueofcurrentDate=currentDate.valueOf()-(24*60*60*1000);
+	 var newDate =new Date(valueofcurrentDate);
+	 return newDate;
+	} 
+	function zeroPad(num,count)
+	{
+		var numZeropad = num + '';
+		while(numZeropad.length < count) {
+		numZeropad = "0" + numZeropad;
+		}
+		return numZeropad;
+	}
+			$(document).ready(function(){ 
+				
+                $('#backMenu').sweetMenu({
+					top: 40,
+					padding: 8,
+					iconSize: 48,
+					easing: 'easeOutBounce',
+					duration: 500,
+					
+					icons: [
+						'images/back.png'
+					]
+				});
+				
+				$('#exampleMenu').sweetMenu({
+					top: 100,
+					left: 10,
+					padding: 8,
+					iconSize: 48,
+					easing: 'easeOutBounce',
+					duration: 500,
+					icons: [
+						'images/home.png',
+						'images/contact.png',
+						'images/contact.png',
+					]
+				});
+			});
+			function cur_change(cur)
+			{
+				$('#changed_cur').val(cur);
+				$('#changed_cur1').val(cur);
+				var anand = '<?php if(isset($anand) && $anand){ echo $anand;}?>';
+				//$('#anand').val(anand);
+				//$('#updated_currency').html(cur);
+				var url = ('<?php echo $_SERVER['REQUEST_URI']?>');
+				var n =(url.indexOf("hotel_search"));
+		
+				$.ajax
+				 ({
+					   type: "POST",
+						url: "<?php echo WEB_URL?>home/change_currency",
+						data: "changed_cur="+cur,
+					   success: function(msg)
+						{
+							$('#updated_currency').html(cur);
+							if(n != -1)
+							{
+								loadData_sort(1);        
+								
+								
+							}
+							//if(url.contains())
+						}
+				 });
+				//loadData_sort(1);
+				//$('#submit_cur').submit();
+			}
+		</script>
+  
+   <style type="text/css">
+			
+            .sweetMenuAnchor{
+                border-top: 1px solid #ffffff;
+                border-right: 1px solid #ffffff;
+                border-bottom: 1px solid #ffffff;
+				border-radius: 7px;
+				color: #f41111;
+				font-size: 22px;
+				font-weight: bold;
+				text-align: right;
+				text-transform: uppercase;
+				font-family: arial;
+				text-decoration: none;
+				background-color: #e9e9e9;
+				opacity: 0.7; 
+				z-index:1000;
+			}
+			
+			.sweetMenuAnchor span{
+				display: block;
+				padding-top: 10px;
+				 
+			 
+				padding-left:60px;
+				 
+			}
+		 
+		 .topmainlinks1 ul li{list-style:none;color:#000;text-decoration:none}
+.topmainlinks1 ul li a:link{list-style:none;color:#54a6e0;font-size:13px;margin-top:7px;border-radius:5px;text-align:left;text-decoration:none;width:128px;height:18px;float:left;padding:5px 0 4px 10px}
+
+		 
+        </style>
+  
+  
+   
+		
+  
+</head>
+
+<div class="wrapper">
+
+<div class="header">
+ 
+<div class="logo"><a href="<?php echo WEB_URL ?>home/index"><img src="<?php print WEB_DIR ?>images/logo.png" border="0" /></a></div>
+<div class="menu">
+<ul>
+<li> <a href="<?php echo WEB_URL ?>home/hotel_home"> Hotel </a></li>
+<li> <a href="<?php echo WEB_URL ?>home/flight_home"> Flights </a></li>
+<li> <a href="<?php echo WEB_URL ?>home/packages_home">Packages</a></li>
+<li> <a href="<?php echo WEB_URL ?>home/car_home">Car </a></li>
+<!--<li> <a href="#">Cruises</a></li>-->
+<li> <a href="<?php echo WEB_URL ?>home/football_tickets">Football Tickets</a></li>
+<li> <a href="<?php echo WEB_URL ?>home/deals">Deals</a></li>
+</ul>
+</div>
+<div class="popbox"  style="float:left; " >
+            <a class="open" href="#" style="float:left; margin-top:40px; width:110px;  color:#FFF; text-shadow: 1px 1px #777777; font-weight:bold; font-size: 13px; text-transform: none;"> Login &nbsp;<img src="<?php print WEB_DIR ?>images/arow1.png" border="0" /> </a>
+            <div class="collapse" >
+      <div style="display: none; top: 10px; left: 0px;" class="box">
+        
+<div style="float:left; margin-left:53px; padding-top:55px; position:absolute;"><a href="#"  ><img src="<?php print WEB_DIR ?>images/top.png" border="0"  /></a></div>
+        <div style="width:158px; height:auto; height:auto; float:left; background:#fff; border:solid 1px #d9d9d9; border:solid 1px #BBBBBB;
+      border-radius:7px; margin-top:66px; box-shadow:0px 0px 10px #b4b4b4; margin-left:-12px; ">
+       <div style="float:left; width:145px; height:78px; font-size:10px; font-size:12px; color:#333; padding:5px 10px ; ">
+        	 	
+             <div class="topmainlinks1" >	
+            <ul>
+            <li><a href="<?php echo WEB_URL?>member/mem_login"><span style="color:#626262; font-weight:bold; text-decoration:none; text-transform:uppercase; text-shadow: 0px 0px #777777;">  Customer Login</span></a></li>
+             <li><a href="<?php echo WEB_URL?>home/agent_login"><span style="color:#626262; font-weight:bold; text-decoration:none; text-transform:uppercase;  text-shadow: 0px 0px #777777;">  Agent Login</span></a></li>
+            </ul>
+             	
+            </div>	
+
+         
+         </div>
+        
+        </div>
+</div></div></div>
+ 
+<form method="post" action="<?php echo $_SERVER['REQUEST_URI']?>" id="submit_cur">
+<input type="hidden" id="changed_cur" name="changed_cur"/>
+<input type="hidden" name="hotel_cur" value="<?php if(isset($anand) && $anand){ echo $anand;}?>"/>
+</form>
+<div id="language">
+<div class="popbox"  style="float:left; width:25px;" >
+
+            <a class="open" href="#" id="updated_currency" style="float:left; padding-top:7px; padding-left:8px; width:50px; color:#fff;"><?php  echo $this->session->userdata('host_currencyCode')?>  <?php /*?><img src="<?php print WEB_DIR ?>images/america.jpg" border="0" /> <img src="<?php print WEB_DIR ?>images/arow1.png" border="0" /><?php */?> </a>
+            <div class="collapse"  >
+      <div style="display: none; top: 10px; left: 0px;" class="box">
+        
+<div style="float:left; margin-left:25px; padding-top:25px; position:absolute;"><a href="#"  ><img src="<?php print WEB_DIR ?>images/top.png" border="0"  /></a></div>
+        <div style="width:80px; height:auto; height:auto; float:left; background:#fff; border:solid 1px #d9d9d9; border:solid 1px #BBBBBB;
+      border-radius:5px; margin-top:36px; box-shadow:0px 0px 15px #999; margin-left:-13px; ">
+      
+              
+        
+        
+        <div style="float:left; width:70px; height:168px; font-size:10px; font-size:12px; color:#333; padding:5px 10px ;overflow: auto;">
+        	 	
+             <div class="topmainlinks">	
+           <?php /*?> <ul>
+            <li><a href="#"><span style="color:#626262; text-decoration:none;"> <img src="<?php print WEB_DIR ?>images/america.jpg" border="0" />&nbsp; United States</span></a></li>
+            <li><a href="#"><span style="color:#626262; text-decoration:none;"> <img src="<?php print WEB_DIR ?>images/1.jpg" border="0" />&nbsp; Belgium</span></a></li>
+            <li><a href="#"><span style="color:#626262; text-decoration:none;"> <img src="<?php print WEB_DIR ?>images/2.jpg" border="0" />&nbsp; Australian dollar</span></a></li>
+            <li><a href="#"><span style="color:#626262; text-decoration:none;"> <img src="<?php print WEB_DIR ?>images/3.jpg" border="0" />&nbsp; France</span></a></li>
+            <li><a href="#"><span style="color:#626262; text-decoration:none;"> <img src="<?php print WEB_DIR ?>images/4.jpg" border="0" />&nbsp; Ireland</span></a></li>
+            <li><a href="#"><span style="color:#626262; text-decoration:none;"> <img src="<?php print WEB_DIR ?>images/5.jpg" border="0" />&nbsp; Netherlands</span></a></li>
+            </ul><?php */?>
+             	 <ul>
+				<?php $currency = $this->Home_Model->get_cnt_cur();
+			if($currency != ''){ 
+				  foreach($currency as $cont){ ?>
+            <li onclick="cur_change('<?php echo ($cont->currency);?>');">  <a href="#"><span style="color:#626262; text-decoration:none;"><?php  echo $cont->currency;?></span></a></li>
+            <?php }}?>
+           
+            </ul>
+            </div>	
+            
+ 
+         
+         </div>
+        
+        </div>
+</div></div></div>
+</div>
+
+
+
+</div></div> 

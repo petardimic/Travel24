@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+<style>
+
+.list {
+	color:#707070;
+	font-size:14px;
+	list-style:disc;
+	margin-bottom:32px;
+	margin-left:25px
+}
+.list .list {
+	margin-bottom:0
+}
+code {
+	background-color:#f5f5f5;
+	border:1px solid #ddd;
+	color:#555;
+	font-family:monospace;
+	font-size:14px
+}
+pre code {
+	display:block;
+	line-height:20px;
+	margin-bottom:32px;
+	overflow:scroll;
+	padding:14px 20px
+}
+p+pre code {
+	margin-top:-32px
+}
+.demo .numbers {
+	background-color:#ffd;
+	border:1px solid #eec;
+	margin-bottom:32px;
+	padding:16px 20px
+}
+.demo .numbers p {
+	margin-bottom:0
+}
+.demo .numbers .list {
+	margin-bottom:0
+}
+.example {
+	clear:both;
+	margin-bottom:32px
+}
+.cards {
+  margin: -37px -75px -75px 161px;
+    overflow: hidden;
+    position: absolute;
+}
+.cards li {
+-webkit-transition:all .2s;
+-moz-transition:all .2s;
+-ms-transition:all .2s;
+-o-transition:all .2s;
+transition:all .2s;
+	background-image:url(card_logos.png);
+	background-position:0 0;
+	float:left;
+	height:32px;
+	margin-right:5px;
+	text-indent:-9999px;
+	width:51px
+}
+.cards li:last-child {
+	margin-right:0
+}
+.cards .visa_electron {
+	background-position:204px 0
+}
+.cards .mastercard {
+	background-position:153px 0
+}
+.cards .maestro {
+	background-position:102px 0
+}
+.cards .amex {
+	background-position:51px 0
+}
+.cards .visa.off {
+	background-position:0 32px
+}
+.cards .visa_electron.off {
+	background-position:204px 32px
+
+
+}
+.cards .mastercard.off {
+	background-position:153px 32px
+}
+.cards .maestro.off {
+	background-position:102px 32px
+}
+.cards .amex.off {
+	background-position:51px 32px
+}
+form li {
+	margin:8px 0
+}
+
+form label small {
+	color:#aaa;
+	font-size:11px;
+	line-height:11px;
+	text-transform:uppercase
+}
+form input.valid {
+	background:url(tick.png) 175px center no-repeat
+}
+ol, ul {
+	list-style:none
+}
+.vertical {
+	overflow:hidden
+}
+.vertical li {
+	float:left;
+	width:140px
+}
+.vertical li .or {
+	color:#aaa;
+	float:left;
+	font-size:12px;
+	margin-left:-8px;
+	margin-top:32px
+}
+.vertical li:last-child {
+	float:right;
+	text-align:right
+}
+.vertical li:last-child input {
+	float:right
+}
+.vertical input {
+	width:68px
+}
+
+.fork_me {
+	right:0;
+	position:absolute;
+	top:0
+}
+.fork_me a:hover {
+	border:0
+}
+</style>

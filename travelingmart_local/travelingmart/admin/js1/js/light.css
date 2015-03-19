@@ -1,0 +1,58 @@
+
+
+p {margin-top:0}
+ul {margin:0; padding-left:20px}
+
+
+#tinybox {  
+	position:absolute;  
+	display:none; 
+	padding:1px; 
+	height:100%; 
+	width:100%; 
+	/*background: #999999 url(images/preload.gif) no-repeat 50% 50%; */
+	/*border:1px solid black;*/ 
+	z-index:2500;	
+}
+
+#tinymask {
+	position:absolute; 
+	background:#666666; 
+	display: compact; 
+	top:0; 
+	left:0; 
+	height:100%; 
+	width:100%; 
+	z-index:2500
+}
+#tinycontent {
+	background:#fff;
+}
+
+.button {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size::11px; 
+	margin-bottom:0px; padding:0px 0px 0px 0px; 	
+	cursor:pointer;
+}
+.button:hover {
+	color:#0066FF;	
+	text-decoration:none;
+}
+.textblck{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#000000;
+}
+.textblck2{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#000000;
+text-indent:20px;
+}
+.textWhiteHead{
+font-family:Arial, Helvetica, sans-serif;
+font-size:13px;
+color:#FFFFFF;
+font-weight:bold;
+}

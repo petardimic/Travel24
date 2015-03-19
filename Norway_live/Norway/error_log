@@ -1,0 +1,51 @@
+[02-Apr-2014 09:15:16 America/New_York] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/norway/public_html/test_airport.php on line 30
+[02-Apr-2014 09:15:16 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/norway/public_html/test_airport.php:30) in /home/norway/public_html/test_airport.php on line 51
+[02-Apr-2014 09:15:19 America/New_York] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/norway/public_html/test_airport.php on line 30
+[02-Apr-2014 09:15:19 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/norway/public_html/test_airport.php:30) in /home/norway/public_html/test_airport.php on line 51
+[02-Apr-2014 09:15:29 America/New_York] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/norway/public_html/test_airport.php on line 30
+[02-Apr-2014 09:15:29 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/norway/public_html/test_airport.php:30) in /home/norway/public_html/test_airport.php on line 51
+[03-Apr-2014 08:36:24 America/New_York] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/norway/public_html/home/controllers/flight.php on line 450
+[07-Apr-2014 09:42:21 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[07-Apr-2014 09:43:10 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 78 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[07-Apr-2014 10:06:17 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[12-Apr-2014 09:45:16 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[16-Apr-2014 02:45:16 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/home.php on line 2
+[16-Apr-2014 02:45:21 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/home.php on line 2
+[16-Apr-2014 02:45:26 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 1342001 bytes) in Unknown on line 0
+[16-Apr-2014 03:46:12 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 1342001 bytes) in Unknown on line 0
+[16-Apr-2014 05:29:03 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 607175 bytes) in Unknown on line 0
+[17-Apr-2014 09:00:22 America/New_York] PHP Parse error:  syntax error, unexpected ''</SecurityToken>' (T_ENCAPSED_AND_WHITESPACE) in /home/norway/public_html/home/controllers/flight.php on line 9559
+[17-Apr-2014 09:02:11 America/New_York] PHP Parse error:  syntax error, unexpected '][', expecting ']' in /home/norway/public_html/home/controllers/flight.php on line 5749
+[18-Apr-2014 08:13:55 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 794840 bytes) in Unknown on line 0
+[18-Apr-2014 08:14:05 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 794584 bytes) in Unknown on line 0
+[18-Apr-2014 08:14:05 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 794584 bytes) in Unknown on line 0
+[18-Apr-2014 09:06:33 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 794456 bytes) in Unknown on line 0
+[18-Apr-2014 09:07:05 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/home.php on line 2
+[18-Apr-2014 09:07:48 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/home.php on line 2
+[18-Apr-2014 09:21:16 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 1498164 bytes) in Unknown on line 0
+[18-Apr-2014 09:21:25 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 1498164 bytes) in Unknown on line 0
+[18-Apr-2014 09:21:40 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 1498164 bytes) in Unknown on line 0
+[18-Apr-2014 09:28:47 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 1497648 bytes) in Unknown on line 0
+[18-Apr-2014 09:45:07 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 580977 bytes) in Unknown on line 0
+[21-Apr-2014 02:36:29 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 7 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[21-Apr-2014 02:37:30 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[21-Apr-2014 02:37:34 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[21-Apr-2014 02:37:36 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[21-Apr-2014 02:37:38 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[21-Apr-2014 02:37:39 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[21-Apr-2014 02:37:59 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 3 bytes) in /home/norway/public_html/home/controllers/home.php on line 2
+[21-Apr-2014 02:38:37 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/home.php on line 2
+[21-Apr-2014 02:39:58 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 926796 bytes) in Unknown on line 0
+[21-Apr-2014 02:45:42 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 3 bytes) in /home/norway/public_html/home/controllers/home.php on line 2
+[21-Apr-2014 05:23:51 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 88 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[21-Apr-2014 05:36:30 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 88 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[21-Apr-2014 05:36:37 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 88 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[21-Apr-2014 07:56:42 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/home.php on line 2
+[21-Apr-2014 07:57:14 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/home.php on line 2
+[21-Apr-2014 07:58:32 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/home.php on line 2
+[22-Apr-2014 09:28:01 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 799651 bytes) in Unknown on line 0
+[22-Apr-2014 09:32:24 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 72 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[22-Apr-2014 09:32:40 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 799779 bytes) in Unknown on line 0
+[23-Apr-2014 08:29:37 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 64 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[23-Apr-2014 08:32:12 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/norway/public_html/home/controllers/flight.php on line 2
+[23-Apr-2014 08:49:35 America/New_York] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/norway/public_html/home/controllers/home.php on line 2

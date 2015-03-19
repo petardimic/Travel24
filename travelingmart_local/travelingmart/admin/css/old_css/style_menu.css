@@ -1,0 +1,106 @@
+body {
+	background-color:#105888;
+	font-family;calibri;
+	font-size:13px;
+	}
+
+a.rounded, .button {
+	outline: none;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap;
+	vertical-align: middle; /* or top */
+	display: -moz-inline-box;
+	display: inline-block;
+	overflow: visible; /* IE6 form button fix */
+	}
+a.button2 {
+	outline: none;
+	border: none;
+	text-decoration: none;
+	cursor: default;
+	white-space: nowrap;
+	vertical-align: middle; /* or top */
+	display: -moz-inline-box;
+	display: inline-block;
+	overflow: visible; /* IE6 form button fix */
+	}
+	
+.button {
+	color:#c9211f;
+	padding: 5px 10px 5px 13px;
+
+	font-size:11px;
+	font-weight:bold;
+	text-transform:uppercase;
+	}
+.button:hover {
+	background-color:#c9211f;
+	color:#FFFFFF;
+	}
+	
+.button2 {
+	color:#FFFFFF;
+	background-color:#c9211f;
+	padding: 5px 10px 5px 13px;
+
+	font-size:11px;
+	font-weight:bold;
+	text-transform:uppercase;
+	}
+.button2:hover {
+	background-color:#c9211f;
+	}
+/* Round Corners */	
+
+
+a.rounded11, .button11 {
+	outline: none;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap;
+	vertical-align: middle; /* or top */
+	display: -moz-inline-box;
+	display: inline-block;
+	overflow: visible; /* IE6 form button fix */
+	}
+a.button11 {
+	outline: none;
+	border: none;
+	text-decoration: none;
+	cursor: default;
+	white-space: nowrap;
+	vertical-align: middle; /* or top */
+	display: -moz-inline-box;
+	display: inline-block;
+	overflow: visible; /* IE6 form button fix */
+	}
+	
+.button11 {
+	color:#FFFFFF;
+	background-color:#0693da;
+	padding: 5px 10px 5px 13px;
+
+	font-size:10px;
+	text-transform:uppercase;
+	}
+.button11:hover {
+	background-color:#0693da;
+	color:#FFFFFF;
+	}
+	
+.button11{
+	color:#FFFFFF;
+	background-color:#0693da;
+	padding: 5px 10px 5px 13px;
+
+	font-size:10px;
+	text-transform:uppercase;
+	}
+.button11:hover {
+	background-color:#c9211f;
+	}
+/* Round Corners */	
+

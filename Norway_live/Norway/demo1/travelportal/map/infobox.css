@@ -1,0 +1,102 @@
+#mapdetailsbox {
+	width:300px;
+	height:auto;
+	border:#09C solid 2px;
+	background:#FFF;
+	padding:8px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#imgbox {
+	width:70px;
+	height:70px;
+	float:left;
+}
+#hotelname {
+	float:left;
+	width:200px;
+	height:auto;
+	color:#679BCD;
+	font-size:12px;
+	font-weight:bold;
+	margin-left:5px;
+	line-height:20px;
+}
+#star {
+	float:left;
+	width:80px;
+	height:15px;
+	margin-left:5px;
+}
+#avalabletxt {
+	float:right;
+	font-size:12px;
+	color:#679BCD;
+	width:120px;
+	text-align:right;
+}
+#doller {
+	float:right;
+	font-size:13px;
+	color:#679BCD;
+	font-weight:bold;
+	width:150px;
+	text-align:right;
+}
+#pernight {
+	float:right;
+	font-size:11px;
+	color:#777;
+	text-align:right;
+	width:100px;
+}
+#mapdetailsbox2 {
+	width:300px;
+	height:auto;
+	border:#09C solid 3px;
+	background:#FFF;
+	padding:8px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#imgbox2 {
+	width:70px;
+	height:70px;
+	float:left;
+}
+#hotelname2 {
+	float:left;
+	width:200px;
+	height:auto;
+	color:#C00;
+	font-size:12px;
+	font-weight:bold;
+	margin-left:5px;
+	line-height:20px;
+}
+#star2 {
+	float:left;
+	width:80px;
+	height:15px;
+	margin-left:5px;
+}
+#avalabletxt2 {
+	float:right;
+	font-size:12px;
+	color:#679BCD;
+	width:120px;
+	text-align:right;
+}
+#doller2 {
+	float:right;
+	font-size:13px;
+	color:#679BCD;
+	font-weight:bold;
+	width:150px;
+	text-align:right;
+}
+#pernight2 {
+	float:right;
+	font-size:11px;
+	color:#777;
+	text-align:right;
+	width:100px;
+}

@@ -1,0 +1,32 @@
+
+@media screen and (max-width: 1000px){
+
+
+
+
+.flight-calander{background-color: #cecece; padding: 10px; border-radius: 4px; overflow-x: auto; width:98% !important; margin:auto; font-size:12px;}
+
+.table th, .table td {padding: 3px;
+line-height: 16px;}
+
+}
+
+
+
+@media screen and (max-width: 550px){
+
+
+
+
+.flight-calander{background-color: #cecece; padding: 10px; border-radius: 4px; overflow-x: auto; width:98% !important; margin:auto; font-size:12px;}
+
+.cal-table th {
+	font-size:10px !important;
+	}
+
+.cal-table td {
+font-size:10px !important;
+}
+
+}
+

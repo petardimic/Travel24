@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php/$1 [PT,L]
+
+RewriteCond %{HTTP_HOST} ^testing.benzyinfotech.com
+RewriteRule ^(.*)$ http://www.testing.benzyinfotech.com/$1 [R=permanent,L]
+
+
+<IfModule mod_php5.c>
+
+php_value upload_max_filesize 1000M
+php_value post_max_size 2000M
+
+</IfModule>

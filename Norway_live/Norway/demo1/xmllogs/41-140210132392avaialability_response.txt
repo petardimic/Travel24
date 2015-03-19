@@ -1,0 +1,8 @@
+Availability XML Response <?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header xmlns="http://webservices.amadeus.com/definitions"><SessionId>064D1YNCUU|2</SessionId></soap:Header><soap:Body><soap:Fault xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><faultcode>soap:Client</faultcode><faultstring>18|Presentation|Fusion DSC found an exception !
+	The data does not match the maximum length: 
+	For data element: date
+	Data length should be at least 6 and at most 6
+	Current position in buffer: 20140213 /date 
+              
+	Last 15 characters before error:           date 
+	Current path in the grammar : /itinerary#1/timeDetails#1/firstDateTimeDetail#1/date#1</faultstring><faultactor>SI:APA</faultactor></soap:Fault></soap:Body></soap:Envelope>

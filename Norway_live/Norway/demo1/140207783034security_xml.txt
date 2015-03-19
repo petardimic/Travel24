@@ -1,0 +1,11 @@
+Security Authentication XML Request <br /><br /><?xml version="1.0" encoding="utf-8"?>
+                                                    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+                                                            <soapenv:Header>
+                                                                                      <SessionId>01Z8R4NFOI</SessionId>
+                                                                                      <SequenceNumber>2</SequenceNumber>
+                                                            </soapenv:Header>
+                                                            <soapenv:Body>
+                                                                    <Security_SignOut xmlns="http://xml.amadeus.com/VLSSLQ_06_1_1A">
+                                                                    </Security_SignOut>
+                                                            </soapenv:Body>
+                                                     </soapenv:Envelope>Security Authentication XML Response <br /><br /><?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header xmlns="http://webservices.amadeus.com/definitions"><SessionId>01Z8R4NFOI|6836</SessionId></soap:Header><soap:Body><soap:Fault><faultcode>soap:Client</faultcode><faultstring> 95|Session|Inactive conversation</faultstring></soap:Fault></soap:Body></soap:Envelope>

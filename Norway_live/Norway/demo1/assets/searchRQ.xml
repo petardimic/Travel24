@@ -1,0 +1,14 @@
+<SearchRQ>
+    <AuthenticationFlag>true/false</AuthenticationFlag>
+    <SessionId>12asd2d2edd2dfdsf3454fsdf</SessionId>
+    <SequenceNo>1</SequenceNo>
+    <JourneyType>OneWay/Round/MultiCity</JourneyType>
+    <DestinationFrom>Delhi - Indira Gandhi International Airport-India,DEL</DestinationFrom>
+    <DestinationTo>Bombay (Mumbai) - Chhatrapati Shivaji International-India,BOM</DestinationTo>
+    <DateOnward>dd-mm-yyyy</DateOnward>
+    <DateReturn>dd-mm-yyyy</DateReturn>
+    <CabinClass>Business</CabinClass>
+    <Adults>2</Adults>
+    <Childs>1</Childs>
+    <Infants>0</Infants>
+</SearchRQ>

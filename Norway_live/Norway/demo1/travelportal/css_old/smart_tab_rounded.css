@@ -1,0 +1,143 @@
+/*
+ * SmartTab plugin v2.0
+ * jQuery Tab Control Plugin
+ * 
+ * by Dipu Raj
+ * http://techlaboratory.net/smarttab
+ * 
+ * License 
+ * http://creativecommons.org/licenses/by-sa/3.0/  
+ */
+.stMain {
+  display:block;
+  margin:0;
+  padding:0;
+  color: #000;
+  border: 0px solid #CCC;
+  font-family: "Segoe UI",Tahoma,arial,sans-serif;
+  font-size: 100%;
+  width:611px;
+  z-index:9;
+  position:absolute;
+  margin-top:50px;
+  float:left;l
+}
+
+.stContainer {
+  display:block;
+  margin:0;
+  padding:0;
+  border: 5px solid #49433f; 
+  height:300px;
+  overflow:hidden;  
+  position: relative;
+  min-height: 300px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color:#FFF;
+  opacity:0.9;
+  
+}
+
+.stMain div.tabContent { 
+  display:block;
+  position: absolute;
+  margin:0;  
+  border: 0px solid #D4D4D4;    
+  background-color: #FFF;
+  text-align:left;
+}
+.stMain ul.tabAnchor {
+  display: inline-block;
+  list-style-type: none;
+  position:relative;
+  padding:0;
+  margin:0;    
+margin-left:20px;
+  clear: both;
+  margin-bottom: -1px;
+  z-index: 100;
+}
+.stMain ul.tabAnchor li{ 
+  position: relative; 
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.stMain ul.tabAnchor li a { 
+  display:block;
+  margin:0;
+  margin-right: 3px;
+  padding:5px;  
+  width:108px;
+  font-size: 16px;
+  color:#666;
+  text-decoration: none;
+  outline-style:none;
+ 
+ list-style:none; float:left;  background-color:#900; width:75px;  text-align:center;  border-radius:5px 5px 0 0; background: rgb(187, 16, 16);
+background: rgb(94, 94, 89);
+background: -moz-linear-gradient(90deg, rgb(94, 94, 89) 30%, rgb(65, 65, 65) 70%);
+background: -webkit-linear-gradient(90deg, rgb(94, 94, 89) 30%, rgb(65, 65, 65) 70%);
+background: -o-linear-gradient(90deg, rgb(94, 94, 89) 30%, rgb(65, 65, 65) 70%);
+background: -ms-linear-gradient(90deg, rgb(94, 94, 89) 30%, rgb(65, 65, 65) 70%);
+background: linear-gradient(180deg, rgb(94, 94, 89) 30%, rgb(65, 65, 65) 70%); text-decoration:none; color:#FFF;IE6-9 */                                          
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;   
+}
+.stMain ul.tabAnchor li a small {
+  font-size:15px;
+}
+.stMain ul.tabAnchor li a:hover {
+  color:#FFF;
+	background: rgb(27, 87, 150);
+background: -moz-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: -webkit-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: -o-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: -ms-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: linear-gradient(180deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);  list-style:none; float:left; background-color:#900; width:75px;  text-align:center;  border-radius:5px 5px 0 0; text-decoration:none; color:#FFF;
+}
+.stMain ul.tabAnchor li a.sel {
+  color:#ff8900;
+
+  cursor:text;
+  	background: rgb(27, 87, 150);
+background: -moz-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: -webkit-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: -o-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: -ms-linear-gradient(90deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);
+background: linear-gradient(180deg, rgb(27, 87, 150) 35%, rgb(42, 145, 218) 76%);  list-style:none; float:left; background-color:#900; width:75px; text-align:center;  border-radius:5px 5px 0 0; text-decoration:none; color:#FFF;IE6-9 */
+}
+.loader{
+  position: absolute;
+  left:48%;
+  top:40%;
+  display:block;
+  margin:0;
+  padding:5px; 
+  padding-top: 35px;
+  font-size: 10px;
+  color:#666;
+  text-decoration: none;
+  outline-style:none;
+
+  background: #f6f6f6 url(../images/loader.gif) no-repeat 10px 10px ;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;   
+}
+a.stLinks { 
+  margin:0;
+  padding:5px;
+  color:#666;
+  text-decoration: none;
+  outline-style:none;
+  border: 1px solid #D4D4D4;
+  background-color: #f6f6f6;
+ }
+a.stLinks:hover {
+  color:#FFF;
+  background-color: #00A7DB;
+}

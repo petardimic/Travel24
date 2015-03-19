@@ -1,0 +1,162 @@
+body {
+	background-color:#105888;
+	font-family:calibri;
+	font-size:13px;
+	}
+
+/* admin login start */
+
+#main_outer {
+	width:424px;
+	margin:50px auto;
+	}
+	
+.admin_login-txt_img {
+	width:424px;
+	height:150px;
+	float:left;
+	background-image:url(../images/phuket_logo.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	}
+.agent_login-txt_img {
+	width:424px;
+	height:150px;
+	float:left;
+	background-image:url(../images/agent_login-img-txt.jpg);
+	background-repeat:no-repeat;
+	}
+.admin_login_box-out {
+	width:424px;
+	float:left;
+	margin:40px 0px 0px 0px;
+	}
+.admin_login_box_top {
+	width:424px;
+	height:5px;
+	float:left;
+	padding:0px;
+	background-image:url(../images/admin_login_box-top.jpg);
+	background-repeat:no-repeat;
+		margin-top:60px;
+	}
+.admin_login_box_mdle {
+	width:424px;
+	float:left;
+	padding:0px;
+	background-color:#FFFFFF;
+	background-image:url(../images/admin_login_box-mdle.jpg);
+	background-repeat:repeat-y;
+	background-position:top center;
+
+	}
+.admin_login_box_btm {
+	width:424px;
+	height:5px;
+	float:left;
+	padding:0px;
+	background-image:url(../images/admin_login_box-btm.jpg);
+	background-repeat:no-repeat;
+	}
+.admin_login-out {
+	width:382px;
+	float:left;
+	padding:20px 0px 0px 25px;
+	}
+.admin_login_txt {
+	width:77px;
+	font-weight:bold;
+	color:#000000;
+	float:left;
+	padding:15px 0px 0px 0px;;
+	}
+.admin_login_box {
+	width:300px;
+	height:44px;
+	float:left;
+	padding:0px;
+	background-image:url(../images/adnmin_login-bg.jpg);
+	background-repeat:no-repeat;
+	}
+.clr {
+	clear:both;
+	}
+.admin_login-box-fl {
+	width:272px;
+	height:21px;
+	color:#333333;
+	border:hidden;
+
+	font-size:11px;
+	margin:6px 0px 0px 8px;
+	padding:8px 5px 0px 5px;
+	}
+.admin_login-out-2 {
+	width:382px;
+	float:left;
+	padding:15px 0px 0px 25px;
+	}
+.admin_login_txt-2 {
+	width:77px;
+	font-weight:bold;
+	float:left;
+	color:#000000;
+	padding:15px 0px 0px 0px;;
+	}
+.admin_login_box-2 {
+	width:300px;
+	height:44px;
+	float:left;
+	padding:0px;
+	background-image:url(../images/adnmin_login-bg_2.jpg);
+	background-repeat:no-repeat;
+	}
+.admin_login-box-fl-2 {
+	width:170px;
+	height:21px;
+	border:hidden;
+
+	font-size:11px;
+	color:#000000;
+	margin:6px 0px 0px 8px;
+	padding:8px 5px 0px 5px;
+	}
+.forgot_pass {
+	float:right;	
+	padding:12px 10px 0px 0px;
+	text-decoration:underline;
+	color:#e93333;
+	}	
+.forgot_pass a {
+	text-decoration:underline;
+	color:#e93333;
+	}
+.forgot_pass a:hover {
+	text-decoration:none;
+	color:#e93333;
+	}
+.remember_pass-out {
+	width:180px;
+	float:left;
+	padding:10px 0px 10px 100px;
+	}
+.remember_check {
+	width:20px;
+	float:left;
+	padding:0px 0px 0px 0px;
+	}
+.remember-txt {
+	float:left;
+	padding:2px 0px 0px 3px;
+	color:#000000;
+	}		
+.sign_btn {
+	width:73px;
+	float:left;
+	padding:0px 0px 20px 100px;
+	}	
+	
+	
+	
+
+/* admin login end */
